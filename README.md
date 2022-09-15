@@ -70,9 +70,9 @@ accepter において 下記の例のように、データの種別（＝APIの�
 ここでは、"Customer" が指定されています。
 
 ```
-	"api_schema": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
+	"api_schema": "SAPBusinessPartnerCustomerReads",
 	"accepter": ["Customer"],
-	"business_partner_code": "1000140",
+	"business_partner_code": "101",
 	"deleted": false
 ```
   
@@ -81,9 +81,9 @@ accepter において 下記の例のように、データの種別（＝APIの�
 全データを取得する場合、sample.json は以下のように記載します。  
 
 ```
-	"api_schema": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
+	"api_schema": "SAPBusinessPartnerCustomerReads",
 	"accepter": ["All"],
-	"business_partner_code": "1000140",
+	"business_partner_code": "101",
 	"deleted": false
 ```
 
