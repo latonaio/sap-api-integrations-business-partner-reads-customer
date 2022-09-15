@@ -1,0 +1,28 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-customer/SAP_API_Caller/caller.go#L111",
+	"function": "sap-api-integrations-business-partner-reads-customer/SAP_API_Caller.(*SAPAPICaller).General",
+	"level": "INFO",
+	"message": [
+		{
+			"BusinessPartner": "101",
+			"BankIdentification": "0001",
+			"BankCountryKey": "DE",
+			"BankName": "Test Bank",
+			"BankNumber": "00010001",
+			"SWIFTCode": "",
+			"BankControlKey": "01",
+			"BankAccountHolderName": "Test",
+			"BankAccountName": "Test",
+			"ValidityStartDate": "2022-09-12",
+			"ValidityEndDate": "10000-01-01T08:59:59+09:00",
+			"IBAN": "",
+			"IBANValidityStartDate": "",
+			"BankAccount": "12345678",
+			"BankAccountReferenceText": "",
+			"CollectionAuthInd": false,
+			"CityName": "",
+			"AuthorizationGroup": ""
+		}
+	],
+	"time": "2022-09-15T18:40:03+09:00"
+}

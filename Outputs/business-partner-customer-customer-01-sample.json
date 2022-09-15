@@ -1,0 +1,30 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-customer/SAP_API_Caller/caller.go#L383",
+	"function": "sap-api-integrations-business-partner-reads-customer/SAP_API_Caller.(*SAPAPICaller).Customer",
+	"level": "INFO",
+	"message": [
+		{
+			"Customer": "1",
+			"AuthorizationGroup": "",
+			"BillingIsBlockedForCustomer": "",
+			"CreationDate": "2022-09-10",
+			"CustomerAccountGroup": "DEBI",
+			"CustomerClassification": "",
+			"CustomerFullName": "御中 Test Customer/999-9999 test",
+			"CustomerName": "Test Customer",
+			"DeliveryIsBlocked": "",
+			"OrderIsBlockedForCustomer": "",
+			"PostingIsBlocked": false,
+			"Supplier": "",
+			"CustomerCorporateGroup": "",
+			"Industry": "",
+			"TaxNumber1": "",
+			"DeletionIndicator": false,
+			"CityCode": "",
+			"County": "",
+			"to_CustomerSalesArea": "http://100.21.57.120:8080/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_Customer('1')/to_CustomerSalesArea",
+			"to_CustomerCompany": "http://100.21.57.120:8080/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_Customer('1')/to_CustomerCompany"
+		}
+	],
+	"time": "2022-09-15T18:59:55+09:00"
+}

@@ -1,0 +1,38 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-customer/SAP_API_Caller/caller.go#L390",
+	"function": "sap-api-integrations-business-partner-reads-customer/SAP_API_Caller.(*SAPAPICaller).Customer",
+	"level": "INFO",
+	"message": [
+		{
+			"Customer": "1",
+			"SalesOrganization": "0001",
+			"DistributionChannel": "01",
+			"Division": "01",
+			"CompleteDeliveryIsDefined": false,
+			"Currency": "EUR",
+			"CustomerAccountAssignmentGroup": "01",
+			"CustomerPaymentTerms": "0001",
+			"CustomerPriceGroup": "01",
+			"CustomerPricingProcedure": "1",
+			"DeliveryPriority": "0",
+			"IncotermsClassification": "FH",
+			"InvoiceDate": "",
+			"OrderCombinationIsAllowed": true,
+			"PartialDeliveryIsAllowed": "",
+			"PriceListType": "",
+			"SalesGroup": "",
+			"SalesOffice": "",
+			"ShippingCondition": "01",
+			"SupplyingPlant": "0001",
+			"SalesDistrict": "000001",
+			"InvoiceListSchedule": "",
+			"ExchangeRateType": "",
+			"OrderIsBlockedForCustomer": "",
+			"DeliveryIsBlockedForCustomer": "",
+			"BillingIsBlockedForCustomer": "",
+			"DeletionIndicator": false,
+			"to_PartnerFunction": "http://100.21.57.120:8080/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_CustomerSalesArea(Customer='1',SalesOrganization='0001',DistributionChannel='01',Division='01')/to_PartnerFunction"
+		}
+	],
+	"time": "2022-09-15T18:59:56+09:00"
+}
