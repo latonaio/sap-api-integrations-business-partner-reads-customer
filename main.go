@@ -21,7 +21,7 @@ func main() {
 		gc,
 		l,
 	)
-	inputSDC := fr.ReadSDC("./Inputs//SDC_Business_Partner_Customer_Sales_Area_sample.json")
+	inputSDC := fr.ReadSDC("./Inputs//SDC_Business_Partner_Customer_BPName_sample.json")
 	sap_api_time_value_converter.ChangeTimeFormatToSAPFormatStruct(&inputSDC)
 	accepter := inputSDC.Accepter
 	if len(accepter) == 0 || accepter[0] == "All" {

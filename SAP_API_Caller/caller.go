@@ -85,58 +85,58 @@ func (c *SAPAPICaller) General(businessPartner string) {
 	generalData, err := c.callBPCustomerSrvAPIRequirementGeneral("A_BusinessPartner", businessPartner)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(generalData)
 	}
-	c.log.Info(generalData)
 
 	roleData, err := c.callToRole(generalData[0].ToRole)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(roleData)
 	}
-	c.log.Info(roleData)
 
 	addressData, err := c.callToAddress(generalData[0].ToAddress)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(addressData)
 	}
-	c.log.Info(addressData)
 
 	bankData, err := c.callToBank(generalData[0].ToBank)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(bankData)
 	}
-	c.log.Info(bankData)
 
 	customerData, err := c.callToCustomer(generalData[0].ToCustomer)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(customerData)
 	}
-	c.log.Info(customerData)
 
 	salesAreaData, err := c.callToSalesArea(customerData.ToSalesArea)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(salesAreaData)
 	}
-	c.log.Info(salesAreaData)
 
 	partnerFunctionData, err := c.callToPartnerFunction(salesAreaData[0].ToPartnerFunction)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(partnerFunctionData)
 	}
-	c.log.Info(partnerFunctionData)
 
 	companyData, err := c.callToCompany(customerData.ToCompany)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(companyData)
 	}
-	c.log.Info(companyData)
 }
 
 func (c *SAPAPICaller) callBPCustomerSrvAPIRequirementGeneral(api, businessPartner string) ([]sap_api_output_formatter.General, error) {
@@ -378,30 +378,30 @@ func (c *SAPAPICaller) Customer(customer string) {
 	customerData, err := c.callBPCustomerSrvAPIRequirementCustomer("A_Customer", customer)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(customerData)
 	}
-	c.log.Info(customerData)
 
 	salesAreaData, err := c.callToSalesArea(customerData[0].ToSalesArea)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(salesAreaData)
 	}
-	c.log.Info(salesAreaData)
 
 	partnerFunctionData, err := c.callToPartnerFunction(salesAreaData[0].ToPartnerFunction)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(partnerFunctionData)
 	}
-	c.log.Info(partnerFunctionData)
 
 	companyData, err := c.callToCompany(customerData[0].ToCompany)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(companyData)
 	}
-	c.log.Info(companyData)
 }
 
 func (c *SAPAPICaller) callBPCustomerSrvAPIRequirementCustomer(api, customer string) ([]sap_api_output_formatter.Customer, error) {
@@ -427,16 +427,16 @@ func (c *SAPAPICaller) SalesArea(customer, salesOrganization, distributionChanne
 	salesAreaData, err := c.callBPCustomerSrvAPIRequirementSalesArea("A_CustomerSalesArea", customer, salesOrganization, distributionChannel, division)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(salesAreaData)
 	}
-	c.log.Info(salesAreaData)
 
 	partnerFunctionData, err := c.callToPartnerFunction(salesAreaData[0].ToPartnerFunction)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(partnerFunctionData)
 	}
-	c.log.Info(partnerFunctionData)
 }
 
 func (c *SAPAPICaller) callBPCustomerSrvAPIRequirementSalesArea(api, customer, salesOrganization, distributionChannel, division string) ([]sap_api_output_formatter.SalesArea, error) {

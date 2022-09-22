@@ -5,7 +5,7 @@
 	"filepath": "/var/lib/aion/Data/rededge_sdc/abcdef.json",
 	"business_partner": {
 		"BusinessPartner": "101",
-		"Customer": "1000140",
+		"Customer": "1",
 		"Supplier": "",
 		"AcademicTitle": "",
 		"AuthorizationGroup": "",
@@ -87,7 +87,7 @@
 			"AuthorizationGroup": ""
 		},
 		"CustomerData": {
-			"Customer": "1000140",
+			"Customer": "1",
 			"AuthorizationGroup": "",
 			"BillingIsBlockedForCustomer": "",
 			"CreationDate": "",
@@ -148,7 +148,7 @@
 			}
 		},
 		"Company": {
-			"CompanyCode": "1710",
+			"CompanyCode": "0001",
 			"APARToleranceGroup": "",
 			"CustomerSupplierClearingIsUsed": "",
 			"HouseBank": "",
